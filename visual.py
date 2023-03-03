@@ -1,1 +1,2 @@
-print("Hello")
+def range_ip (start, finish):
+    pass
