@@ -31,4 +31,4 @@ def withe_lest(server_work):
 
 
 
-withe_lest(range_ip('79.175.1.0', '79.175.3.255', "25565"))
+withe_lest(range_ip('95.137.0.0', '95.137.47.255', "25565"))
