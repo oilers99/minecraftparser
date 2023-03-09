@@ -1,3 +1,6 @@
+import visual
+
+
 def range_ip(start, finish, port):
     """Принимает старт диапозона и финиш. Генерирует  все IP в диапозоне
     добавляет порт"""
@@ -17,18 +20,22 @@ def withe_lest(server_work):
     """Принимает переменную со списком IP и портами перебирает их
     записывает в файл с указанием версии"""
     from mcstatus import JavaServer
-    z = []
+    my_file = open("output.txt", "a")
+    finale = []
     for i in server_work:
         try:
             server = JavaServer.lookup(i)
             status = server.status()
             if server.ping() > 1:
                 print(i, status.version.name)
-                z.append(i + " " + status.version.name)
+                finale.append(i + " " + status.version.name)
+                my_file.writelines(finale)
+                my_file.writelines("\n")
         except Exception:
-            print(i, "No")
-    print(z)
+            None
+    my_file.close()
+
+"""запуск визула !!!! както криво"""
+visual
 
 
-
-withe_lest(range_ip('95.137.0.0', '95.137.47.255', "25565"))
