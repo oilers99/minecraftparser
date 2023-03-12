@@ -1,6 +1,5 @@
 import visual
 
-
 def range_ip(start, finish, port):
     """Принимает старт диапозона и финиш. Генерирует  все IP в диапозоне
     добавляет порт"""
@@ -13,8 +12,7 @@ def range_ip(start, finish, port):
     ip_port = []
     for ip in range_ipa:
         ip_port.append(ip + ":" + port)
-    return ip_port
-
+    withe_lest(ip_port)
 
 def withe_lest(server_work):
     """Принимает переменную со списком IP и портами перебирает их
@@ -27,12 +25,13 @@ def withe_lest(server_work):
             server = JavaServer.lookup(i)
             status = server.status()
             if server.ping() > 1:
-                print(i, status.version.name)
+                # print(i, status.version.name)
                 finale.append(i + " " + status.version.name)
                 my_file.writelines(finale)
                 my_file.writelines("\n")
         except Exception:
             None
+            # print("no")
     my_file.close()
 
 """запуск визула !!!! както криво"""
