@@ -4,8 +4,10 @@ import main
 import test
 
 def windows():
+    """2"""
     """Создает окно с 3мя полями ввода, кнопкой старт"""
     def click_btn():
+        """3"""
         """Записывает переменные старт диапозон, финиш, порт, передает в
         test test_entry"""
         start_entry = start_e1.get()
@@ -16,7 +18,7 @@ def windows():
     """Основное окно"""
     top = Tk()
     top.resizable(False, False)
-    top.title("ПарсерМаинкрафт_v1.0")
+    top.title("ПарсерМаинкрафт_v1.2")
     photo = tkinter.PhotoImage(file="minecraft-logo-clipart-tnt-6.png")
     top.iconphoto(False, photo)
     top.geometry("400x200+800+200")
@@ -51,6 +53,7 @@ def windows():
     """Отображение"""
     top.mainloop()
 def check_test(start_ip_ch, finish_ip_ch, port_ch, check):
+    """5"""
     """Принимает значение из test test_entry, проверяет порамтр check
     if передает в main range_ip
     else сообшение ошибка"""
@@ -60,5 +63,5 @@ def check_test(start_ip_ch, finish_ip_ch, port_ch, check):
         fail = tkinter.Label(text="НЕВЕРНЫЙ ВВОД\nincorrect data entry", foreground="red")
         fail.grid(row=5, column=1)
         pass
-
+"""2"""
 windows()

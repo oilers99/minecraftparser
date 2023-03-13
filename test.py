@@ -1,5 +1,6 @@
 import visual
 def test_entry(start_test, finish_test, port_test):
+    """4"""
     """проверяет аргументы входа из visual click_btn
     1. Формат ввода
     2. Соответствие диапозону

@@ -1,6 +1,7 @@
 import visual
 
 def range_ip(start, finish, port):
+    """6"""
     """Принимает старт диапозона и финиш. Генерирует  все IP в диапозоне
     добавляет порт"""
     import ipaddress
@@ -15,6 +16,7 @@ def range_ip(start, finish, port):
     withe_lest(ip_port)
 
 def withe_lest(server_work):
+    """7"""
     """Принимает переменную со списком IP и портами перебирает их
     записывает в файл с указанием версии"""
     from mcstatus import JavaServer
@@ -35,6 +37,7 @@ def withe_lest(server_work):
     my_file.close()
 
 """запуск визула !!!! както криво"""
+"""1"""
 visual
 
 
