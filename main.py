@@ -36,8 +36,14 @@ def withe_lest(server_work):
             # print("no")
     my_file.close()
 
-"""запуск визула !!!! както криво"""
-"""1"""
-visual
+def main():
+    """1"""
+    import visual
+    visual.windows()
+
+
+if __name__ == "__main__":
+    main()
+
 
 

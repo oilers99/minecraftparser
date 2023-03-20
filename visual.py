@@ -18,7 +18,7 @@ def windows():
     """Основное окно"""
     top = Tk()
     top.resizable(False, False)
-    top.title("ПарсерМаинкрафт_v1.2")
+    top.title("ПарсерМаинкрафт_v1.3")
     photo = tkinter.PhotoImage(file="minecraft-logo-clipart-tnt-6.png")
     top.iconphoto(False, photo)
     top.geometry("400x200+800+200")
@@ -63,5 +63,4 @@ def check_test(start_ip_ch, finish_ip_ch, port_ch, check):
         fail = tkinter.Label(text="НЕВЕРНЫЙ ВВОД\nincorrect data entry", foreground="red")
         fail.grid(row=5, column=1)
         pass
-"""2"""
-windows()
+
